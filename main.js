@@ -1,85 +1,29 @@
 
-// Creamos una variable  llamada "colchones" que sea un array de objetos.
-const colchones = [
-    {
-        tipo: "Espuma De Alta Densidad",
-        medida: "1 plaza",
-        precio: 10000,
-        marca: "Cannon"
-    },
-    {
-        tipo: "Resosrtes Continuos",
-        medida: "1 plaza",
-        precio: 12000,
-        marca: "Maxiking"
-    },
-    {
-        tipo: "Resosrtes Continuos",
-        medida: "1 plaza",
-        precio: 188000,
-        marca: "Super Descanso"
-    },
-
-    {
-        tipo: "Espuma De Alta Densidad",
-        medida: "1 plaza",
-        precio: 120600,
-        marca: "Super Descanso"
-    },
-    {
-        tipo: "Espuma De Alta Densidad",
-        medida: "1 plaza y media",
-        precio: 15000,
-        marca: "Sueño Dorado"
-    },
-    {
-        tipo: "Espuma De Alta Densidad",
-        medida: "1 plaza y media",
-        precio: 15000,
-        marca: "Cannon"
-    },
-    {
-        tipo: "Resosrtes Continuos",
-        medida: "1 plaza y media",
-        precio: 18000,
-        marca: "Super Descanso"
-    },
-    {
-        tipo: "Espuma De Alta Densidad",
-        medida: "2 plazas",
-        precio: 20000,
-        marca: "Cannon"
-    },
-    {
-        tipo: "Resosrtes Continuos",
-        medida: "2 plazas",
-        precio: 24000,
-        marca: "Maxiking"
-    },
-    {
-        tipo: "Espuma De Alta Densidad",
-        medida: "Queen",
-        precio: 25000,
-        marca: "Super Descanso"
-    },
-    {
-        tipo: "Resosrtes Continuos",
-        medida: "Queen",
-        precio: 30000,
-        marca: "Super Descanso"
-    },
-    {
-        tipo: "Espuma De Alta Densidad",
-        medida: "King",
-        precio: 30000,
-        marca: "Cannon"
-    },
-    {
-        tipo: "Resosrtes Continuos",
-        medida: "King",
-        precio: 36000,
-        marca: "Maxiking"
+// Definir la clase Colchon
+class Colchon {
+    constructor(tipo, medida, precio, marca) {
+        this.tipo = tipo;
+        this.medida = medida;
+        this.precio = precio;
+        this.marca = marca;
     }
+}
+
+// Crear un array de objetos Colchon
+const colchones = [
+    new Colchon("Espuma De Alta Densidad", "1 plaza", 10000, "Cannon"),
+    new Colchon("Resosrtes Continuos", "1 plaza", 12000, "Maxiking"),
+    new Colchon("Resosrtes Continuos", "1 plaza", 188000, "Super Descanso"),
+    new Colchon("Espuma De Alta Densidad", "1 plaza", 120600, "Super Descanso"),
+    new Colchon("Espuma De Alta Densidad", "1 plaza y media", 15000, "Sueño Dorado"),
+    new Colchon("Espuma De Alta Densidad", "1 plaza y media", 15000, "Cannon"),
+    new Colchon("Resosrtes Continuos", "1 plaza y media", 18000, "Super Descanso"),
+    new Colchon("Espuma De Alta Densidad", "2 plazas", 20000, "Cannon"),
+    new Colchon("Resosrtes Continuos", "2 plazas", 24000, "Maxiking"),
+    new Colchon("Espuma De Alta Densidad", "Queen", 25000, "Super Descanso"),
+    new Colchon("Resosrtes Continuos", "Queen", 30000, "Super Descanso"),
+    new Colchon("Espuma De Alta Densidad", "King", 30000, "Cannon"),
+    new Colchon("Resosrtes Continuos", "King", 36000, "Maxiking")
 ];
 // Función para mostrar los detalles de un colchón
 function mostrarColchon(colchon) {
